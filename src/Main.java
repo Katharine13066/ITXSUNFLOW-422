@@ -48,6 +48,15 @@ class BlokOfFlats {
 
     }
 
+    public final static class Floors {
+        public int numOfFloors = 5;
+
+        public int getNumOfFloors(){
+            return numOfFloors;
+        }
+
+    }
+
     void isSmartHouse() {
 
         // Локальный метод внутреннего класса
@@ -79,6 +88,9 @@ public class Main {
         BlokOfFlats.Flats flats = new BlokOfFlats.Flats();
         int num = flats.getNumOfFlats();
         System.out.println("Number of flats \n" + num);
+
+        BlokOfFlats.Floors floors = new BlokOfFlats.Floors();
+        System.out.println("Number of floors \n" + floors.getNumOfFloors());
 
         blokOfFlats.isSmartHouse();
         blokOfFlats.getStreet();
