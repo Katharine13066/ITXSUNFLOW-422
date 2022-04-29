@@ -7,7 +7,7 @@ class BlokOfFlats {
     static Street street = new Street() {
         @Override
         public void StreetName() {
-            System.out.println("Nemiga Street");
+            System.out.println("Filimonova Street");
         }
     };
 
